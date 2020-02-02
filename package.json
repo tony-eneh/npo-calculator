@@ -1,0 +1,19 @@
+{
+  "name": "npo-calculator",
+  "version": "1.0.0",
+  "description": "Web-based radio advert cost calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "radio",
+    "rate-card",
+    "advert",
+    "ad",
+    "calculator",
+    "media"
+  ],
+  "author": "Tony Eneh",
+  "license": "ISC"
+}
