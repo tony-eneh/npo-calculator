@@ -1,9 +1,0 @@
-STEPS
-Version 1.0
-Features
-1. Front page features 
-- calendar for picking dates,
-- belt picker
-- type of advert picker
-- an output area showing resulting amount
-- surcharge area checkboxes for (religious, political programs)
