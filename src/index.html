@@ -6,37 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WazobiaFM Ads</title>
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <div class="container wrapper">
-        <header class="row flex-column align-items-center">
-            <div class="logo"><img class="img-fluid" src="images/logo.png" alt="WazobiaFM logo"></div>
+    <div class="wrapper">
+        <!-- header section -->
+        <header id="header" class="">
+            <div class="logo"><img class="" src="images/logo.png" alt="WazobiaFM logo"></div>
             <h1 class="title h3">Ad Booker</h1>
         </header>
-        <nav class="main-menu nav collapse">
-            <ul class="list-unstyled">
-                <li class="nav-item"><a class="nav-link btn btn-primary" href="my-ads.html">My Ads</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-primary" href="ads.html">Create new Ad</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-primary" href="contact-us.html">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-primary" href="#">Listen to Us</a></li>
+        <!-- main menu -->
+        <nav id="nav" class="main-menu">
+            <ul class="">
+                <li class=""><a class="" href="my-ads.html">My Ads</a></li>
+                <li class=""><a class="" href="ads.html">Create new Ad</a></li>
+                <li class=""><a class="" href="contact-us.html">Contact Us</a></li>
+                <li class=""><a class="" href="#">Listen to Us</a></li>
             </ul>
         </nav>
-        <div class="guest">
-            <p class="welcome-message">Welcome to WazobiaFM ad scheduling app. You can create your new ads, monitor running ads or simple get to know about our rates.</p>
-            <a href="signup.html" class="signup pri-button call-to-action">Signup</a>
-            <p>existing user?</p>
-            <a href="login.html" class="login sec-button call-to-action">Login</a>
-        </div>
-        <div class="logged-in">
-            <a href="ads.html" class="pri-button call-to-action">Create new Ad</a>
-            <a href="my-ads.html" class="sec-button call-to-action">View existing Ads</a>
-        </div>
+        <!-- main content area -->
+        <main id="main" class="">
+
+            <h3 class="h4">Welcome to WazobiaFM ad scheduling app</h3>
+            <p class="welcome-message">You can create your new ads, monitor running ads or simple get to know about our rates.</p>
+            <div id="guest" class="call-to-action">
+                <a href="signup.html" class="" id="signup-button">Signup</a>
+                <a href="login.html" class="">Login</a>
+            </div>
+            <div id="user" class="call-to-action" hidden>
+                <a href="ads.html" class="">Create new Ad</a>
+                <a href="my-ads.html" class="">View existing Ads</a>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer></footer>
     </div>
-    <script src="scripts/jquery-1.3.2.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
 </body>
 
 </html>
