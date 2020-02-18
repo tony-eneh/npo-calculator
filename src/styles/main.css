@@ -2,6 +2,7 @@
     --highlight-color: rgb(56, 138, 15);
     --background-color: rgb(253, 253, 253);
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 p {
@@ -34,6 +35,20 @@ h6 {
 
 button {
     border: none;
+}
+
+li {
+    display: block;
+    width: 100%;
+}
+
+li a {
+    display: block;
+    width: 90%;
+}
+
+span {
+    margin: 0;
 }
 
 .wrapper {
@@ -78,15 +93,18 @@ nav {
     display: none;
 }
 
-nav ul {
+nav ul,
+.unstyled-list {
     list-style: none;
     padding-left: 0;
 }
 
-nav ul a {
+nav ul a,
+.list-item-link {
     text-decoration: none;
     display: block;
     font-size: 2rem;
+    margin-bottom: 1px;
 }
 
 .call-to-action {
@@ -106,6 +124,8 @@ nav ul a {
     text-decoration: none;
     border-radius: .25rem;
     font-size: 2rem;
+    color: var(--background-color);
+    background: var(--highlight-color);
 }
 
 [hidden] {
@@ -140,4 +160,36 @@ form input[type=submit] {
     color: var(--background-color);
     background-color: var(--highlight-color);
     margin-top: 1rem;
+}
+
+li .ad-title {
+    display: block;
+    line-height: 2rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+li .ad-description {
+    font-size: 1rem;
+    display: block;
+    line-height: 1;
+}
+
+.ads-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.ads-list a {
+    position: relative;
+}
+
+.ads-list a::after {
+    content: '>';
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
 }
