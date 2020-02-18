@@ -143,11 +143,13 @@ form>* {
     margin: .12em 0;
 }
 
-form input {
+form input,
+textarea {
     border-color: var(--highlight-color);
     border-radius: .25rem;
     padding-left: 1rem;
     border-style: solid;
+    border-width: 2px;
 }
 
 input+label {
