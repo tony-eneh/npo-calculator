@@ -76,7 +76,6 @@ span {
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 1.5rem;
-    margin-top: 3rem;
     text-align: center;
     padding: 2rem;
 }
@@ -115,7 +114,7 @@ nav ul a,
 .call-to-action a {
     color: var(--background-color);
     background: var(--highlight-color);
-    margin: .1rem;
+    margin: 0 .25rem;
 }
 
 .button {
