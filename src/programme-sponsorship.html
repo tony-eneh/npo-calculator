@@ -19,14 +19,10 @@
     <!-- main -->
     <main id="main">
         <form action="">
-            <label for="stars">Spot</label>
-            <select name="stars" id="stars">
-                <option value="7*">7*</option>
-                <option value="6*">6*</option>
-                <option value="5*">5*</option>
-                <option value="4*">4*</option>
-                <option value="3*">3*</option>
-            </select>
+
+            <!-- displays the total cost of ad-->
+            <label id="display-amount">Total:
+    <output name="total" id="total"># --</output></label>
 
             <label for="programme-length">Programme Length</label>
             <select name="programme-length" id="programme-length">
@@ -43,10 +39,6 @@
 
             <label for="end-date">End Date</label>
             <input type="date" name="end-date" id="end-date">
-
-            <!-- displays the total cost of ad-->
-            <label for="total">Total</label>
-            <output name="total" id="total"></output>
 
             <button class="button">Book Ad</button>
             <button class="button">Save for later</button>

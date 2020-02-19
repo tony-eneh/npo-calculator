@@ -19,14 +19,12 @@
     <!-- main -->
     <main id="main">
         <form action="">
-            <select name="stars" id="stars">
-            <option value="7*">7*</option>
-            <option value="6*">6*</option>
-            <option value="5*">5*</option>
-            <option value="4*">4*</option>
-            <option value="3*">3*</option>
-        </select>
-            <p>you can type select the length of your recorded jingle from the drop down below. OR simply upload the audio file and we will automatically tell you how long it is.</p>
+
+            <!-- displays the total cost of ad-->
+            <label id="display-amount">Total:
+                <output name="total" id="total"># --</output></label>
+
+            <label for="jingle-length">Jingle length:</label>
             <select name="jingle-length" id="jingle-length">
             <option value="5secs">5 seconds</option>
             <option value="10secs">10 seconds</option>
@@ -35,21 +33,24 @@
             <option value="45secs">45 seconds</option>
             <option value="60secs">60 seconds</option>
         </select>
-            <label for="file-upload">Upload your jingle file: <span>acceptable formats are mp3, ...</span></label>
-            <input type="file" name="file-upload" id="file-upload">
 
-            <!--displays the number of words in announcement textarea above-->
-            <output id="no-of-words"></output>
+            <label for="file-upload">Upload your jingle: <small>(acceptable formats are mp3 & wav)</small></label>
+            <input type="file" name="file-upload" id="file-upload" accept="audio/mp3, audio/wav">
+
+            <label for="stars">Select time range:</label>
+            <select name="stars" id="stars">
+                <option value="early-morning">12AM - 5AM  (4*)</option>
+                <option value="morning">5AM - 11AM  (7*)</option>
+                <option value="afternoon">11AM - 4PM  (6*)</option>
+                <option value="evening">4PM - 8PM  (7*)</option>
+                <option value="night">8PM - 12AM  (5*)</option>
+            </select>
 
             <label for="start-date">Start Date</label>
             <input type="date" name="start-date" id="start-date">
 
             <label for="end-date">End Date</label>
             <input type="date" name="end-date" id="end-date">
-
-            <!-- displays the total cost of ad-->
-            <label for="total">Total</label>
-            <output name="total" id="total"></output>
 
             <button class="button">Book Ad</button>
             <button class="button">Save for later</button>
