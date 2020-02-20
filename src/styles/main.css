@@ -154,7 +154,8 @@ form>* {
     margin: .12em 0;
 }
 
-form input,
+fieldset,
+input,
 textarea,
 select {
     border-color: var(--highlight-color);
@@ -174,8 +175,9 @@ select {
     color: var(--background-color);
 }
 
-input+label {
+label {
     margin-top: 1rem;
+    display: block;
 }
 
 form button,
@@ -241,6 +243,7 @@ small {
     display: block;
 }
 
+label>input,
 label+input,
 label+select,
 label+textarea {
@@ -258,4 +261,8 @@ form #display-amount {
     margin: 0 0 1rem;
     text-align: center;
     line-height: 4rem;
+}
+
+#surcharges label {
+    font-size: 1.4rem;
 }

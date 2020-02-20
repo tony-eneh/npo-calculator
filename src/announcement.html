@@ -59,6 +59,22 @@
             <label for="end-date">End Date</label>
             <input type="date" name="end-date" id="end-date" required>
 
+            <fieldset id="surcharges" name="surcharges">
+                <legend>Surcharges</legend>
+                <small>(please tick as appropriate)</small>
+                <label><input type="checkbox" name="political-content" id="political-content">Political Content? <span>100%</span></label>
+
+                <label><input type="checkbox" name="news-content" id="news-content">Political Content? <span>100%</span></label>
+
+                <label><input type="checkbox" name="religious-content" id="religious-content">Religious Content? <span>50%</span></label>
+
+                <label><input type="checkbox" name="programme-displacement" id="programme-displacement">Programme Displacement <span>100%</span></label>
+
+                <label><input type="checkbox" name="programme-adjacency" id="programme-adjacency">Programme Adjacency <span>20%</span></label>
+
+                <label><input type="checkbox" name="independent-programme" id="independent-programme">Independent Programme? <span>50%</span></label>
+            </fieldset>
+
             <button class="button">Book Ad</button>
             <button class="button">Save for later</button>
         </form>
