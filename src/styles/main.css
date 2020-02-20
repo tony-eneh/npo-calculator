@@ -266,3 +266,8 @@ form #display-amount {
 #surcharges label {
     font-size: 1.4rem;
 }
+
+.button>a {
+    color: var(--background-color);
+    text-decoration: none;
+}
