@@ -1,0 +1,261 @@
+:root {
+    --highlight-color: rgb(56, 138, 15);
+    --background-color: rgb(253, 253, 253);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+p {
+    /* color: var(--highlight-color); */
+    /* background-color: var(--background-color); */
+}
+
+.logo {
+    max-width: 10rem;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 1rem;
+}
+
+button {
+    border: none;
+}
+
+li {
+    display: block;
+    width: 100%;
+}
+
+li a {
+    display: block;
+    width: 90%;
+}
+
+span {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+    /* justify-content: stretch; */
+    /* background-color: aqua; */
+}
+
+#header {
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+#main {
+    /* background: blue; */
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+#main>* {
+    margin: 1rem 0
+}
+
+.welcome-message {
+    font-size: larger;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 2rem;
+    background-color: var(--background-color);
+    box-shadow: 2px 0px 5px 3px rgba(0, 0, 0, 0.5);
+    padding-top: 2rem;
+    z-index: 100;
+}
+
+nav ul,
+.unstyled-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul a,
+.list-item-link {
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1px;
+    color: var(--highlight-color);
+    padding: .5rem 2rem;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+}
+
+.call-to-action a {
+    color: var(--background-color);
+    background: var(--highlight-color);
+    margin: 0 .25rem;
+}
+
+.button {
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border-radius: .25rem;
+    font-size: 2rem;
+    color: var(--background-color);
+    background: var(--highlight-color);
+}
+
+[hidden] {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: space-evenly; */
+    text-align: left;
+}
+
+form>* {
+    line-height: 2rem;
+    margin: .12em 0;
+}
+
+form input,
+textarea,
+select {
+    border-color: var(--highlight-color);
+    border-radius: .25rem;
+    padding-left: 1rem;
+    border-style: solid;
+    border-width: 2px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    font-size: 1.5rem;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+}
+
+input+label {
+    margin-top: 1rem;
+}
+
+form button,
+form input[type=submit] {
+    color: var(--background-color);
+    background-color: var(--highlight-color);
+    margin-top: 1rem;
+}
+
+li .ad-title {
+    display: block;
+    line-height: 2rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+li .ad-description {
+    font-size: 1rem;
+    display: block;
+    line-height: 1;
+}
+
+.ads-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.ads-list a {
+    position: relative;
+}
+
+.ads-list a::after {
+    content: '>';
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+}
+
+
+/* #stars {
+    background-color: unset;
+
+
+}
+#stars option:nth-of-type(2) {
+    background-color: blue;
+}
+#stars option:nth-of-type(3) {
+    background-color: yellow;
+}
+#stars option:nth-of-type(4) {
+    background-color: orange;
+}
+#stars option:nth-of-type(5) {
+    background-color: red;
+}
+*/
+
+small {
+    display: block;
+}
+
+label+input,
+label+select,
+label+textarea {
+    margin-bottom: 1rem;
+}
+
+form #display-amount {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    background-color: var(--background-color);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 0 1rem;
+    text-align: center;
+    line-height: 4rem;
+}

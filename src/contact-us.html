@@ -6,25 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <div>
-        <h1>
+    <!-- header -->
+    <header id="header">
+        <div class="logo"><img class="" src="images/logo.png" alt="WazobiaFM logo"></div>
+        <h1 class="title">Welcome</h1>
+    </header>
+
+    <!-- main menu -->
+    <nav id="nav" class="main-menu">
+        <ul class="">
+            <li class=""><a class="" href="my-ads.html">My Ads</a></li>
+            <li class=""><a class="" href="ads.html">Create new Ad</a></li>
+            <li class=""><a class="" href="contact-us.html">Contact Us</a></li>
+            <li class=""><a class="" href="#">Listen to Us</a></li>
+        </ul>
+    </nav>
+    <!-- main -->
+    <main id="main">
+        <h2>
             Contact Us
-        </h1>
-        <div>
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" required>
-                <label for="email">Email</label>
-                <input type="email">
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </div>
+        </h2>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" required>
+            <label for="email">Email</label>
+            <input type="email">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            <button type="submit" class="button">Send</button>
+        </form>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer"></footer>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>

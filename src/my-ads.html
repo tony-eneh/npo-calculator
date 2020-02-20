@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Ads</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <div>
+    <!-- header -->
+    <header id="header">
+        <div class="logo"><img class="" src="images/logo.png" alt="WazobiaFM logo"></div>
+        <h1 class="title">Welcome</h1>
+    </header>
+
+    <!-- main menu -->
+    <nav id="nav" class="main-menu">
+        <ul class="">
+            <li class=""><a class="" href="my-ads.html">My Ads</a></li>
+            <li class=""><a class="" href="ads.html">Create new Ad</a></li>
+            <li class=""><a class="" href="contact-us.html">Contact Us</a></li>
+            <li class=""><a class="" href="#">Listen to Us</a></li>
+        </ul>
+    </nav>
+    <!-- main -->
+    <main id="main">
         <!--TODO:JS populate my-ads list from localStorage first. then fetch from server
          and update both localStorage and this list after fetch-->
-        <ul data-my-ads-list="ewoo">
+        <ol data-my-ads-list="ewoo">
             <li>wait a sec while we fetch your existing ads</li>
-        </ul>
-    </div>
+        </ol>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer"></footer>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
