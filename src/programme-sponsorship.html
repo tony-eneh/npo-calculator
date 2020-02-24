@@ -26,19 +26,33 @@
 
             <label for="programme-length">Programme Length</label>
             <select name="programme-length" id="programme-length">
-                <option value="5">5 minutes</option>
-                <option value="10">10 minutes</option>
-                <option value="15">15 minutes</option>
-                <option value="30">30 minutes</option>
-                <option value="45">45 minutes</option>
-                <option value="60">60 minutes</option>
+                <option value="5mins">5 minutes</option>
+                <option value="10mins">10 minutes</option>
+                <option value="15mins">15 minutes</option>
+                <option value="30mins">30 minutes</option>
+                <option value="45mins">45 minutes</option>
+                <option value="60mins">60 minutes</option>
             </select>
+
+            <label for="stars">Select time range:</label>
+            <select name="stars" id="stars">
+                <option value="EARLY_MORNING">12AM - 5AM  (4*)</option>
+                <option value="MORNING">5AM - 11AM  (7*)</option>
+                <option value="AFTERNOON">11AM - 4PM  (6*)</option>
+                <option value="EVENING">4PM - 8PM  (7*)</option>
+                <option value="NIGHT">8PM - 12AM  (5*)</option>
+            </select>
+
+            <label for="fixed-time"><input type="checkbox" name="fixed-time" id="fixed-time">Specific Time? <small>(attracts 100% surcharge)</small></label>
+            <input type="time" name="time" id="time">
 
             <label for="start-date">Start Date</label>
             <input type="date" name="start-date" id="start-date">
 
             <label for="end-date">End Date</label>
             <input type="date" name="end-date" id="end-date">
+
+
 
             <fieldset id="surcharges" name="surcharges">
                 <legend>Surcharges</legend>
@@ -63,7 +77,7 @@
 
     <!-- footer -->
     <footer id="footer"></footer>
-    <script src="scripts/index.mjs" type="module"></script>
+    <script src="scripts/programme-sponsorship.js"></script>
 </body>
 
 </html>
