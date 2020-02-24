@@ -43,11 +43,11 @@
 
             <label for="stars">Select time range:</label>
             <select name="stars" id="stars">
-                <option value="early-morning">12AM - 5AM  (4*)</option>
-                <option value="morning">5AM - 11AM  (7*)</option>
-                <option value="afternoon">11AM - 4PM  (6*)</option>
-                <option value="evening">4PM - 8PM  (7*)</option>
-                <option value="night">8PM - 12AM  (5*)</option>
+                <option value="EARLY_MORNING">12AM - 5AM  (4*)</option>
+                <option value="MORNING">5AM - 11AM  (7*)</option>
+                <option value="AFTERNOON" selected>11AM - 4PM  (6*)</option>
+                <option value="EVENING">4PM - 8PM  (7*)</option>
+                <option value="NIGHT">8PM - 12AM  (5*)</option>
             </select>
 
             <label for="fixed-time"><input type="checkbox" name="fixed-time" id="fixed-time">Specific Time? <small>(attracts 100% surcharge)</small></label>
@@ -64,7 +64,7 @@
                 <small>(please tick as appropriate)</small>
                 <label><input type="checkbox" name="political-content" id="political-content">Political Content? <span>100%</span></label>
 
-                <label><input type="checkbox" name="news-content" id="news-content">Political Content? <span>100%</span></label>
+                <label><input type="checkbox" name="news-content" id="news-content">News Content? <span>100%</span></label>
 
                 <label><input type="checkbox" name="religious-content" id="religious-content">Religious Content? <span>50%</span></label>
 
@@ -82,7 +82,7 @@
 
     <!-- footer -->
     <footer id="footer"></footer>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/announcement.js"></script>
 </body>
 
 </html>
