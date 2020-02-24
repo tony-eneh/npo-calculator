@@ -65,6 +65,27 @@ const calcTotal = () => {
                     amount = 5000;
             };
             break;
+        case 'AFTERNOON':
+            switch (jingleLength.value) {
+                case '5secs':
+                    amount = 1100;
+                    break;
+                case '10secs':
+                    amount = 1400;
+                    break;
+                case '15secs':
+                    amount = 1800;
+                    break;
+                case '30secs':
+                    amount = 3200;
+                    break;
+                case '45secs':
+                    amount = 4200;
+                    break;
+                case '60secs':
+                    amount = 4800;
+            };
+            break;
         case 'NIGHT':
             switch (jingleLength.value) {
                 case '5secs':
