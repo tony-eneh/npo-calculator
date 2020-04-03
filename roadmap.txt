@@ -1,0 +1,32 @@
+STEPS
+Version 1.0
+Features
+1. Front page features 
+- +calendar for picking dates,
+- +belt picker
+- +type of advert picker
+- +an output area showing resulting amount
+- +surcharge area checkboxes for (religious, political programs)
+- multiple times booking per day
+- +toggle specific time textbox enable/disable on specific time check
+- factor in vat 7.5%
+- put explanations/ descriptions for options especially for news-coverage page
+
+1. Mobile first design, later adapt to desktop
+2. First screen asks which type of advert you want to do. Giving little descriptions for each
+3. integrate card payment
+4. send email to an email address with generated npo form and payment info.
+5. send email to ad booker notifying him of a successful booking.
+
+
+Version future
+For mobile app
+Features:
+1. Set reminder to listen to your ad
+2. Play station from within app to listen to ad
+3. Integrate with outlook and 
++google calendars, add reminders to them
+
+4. People can put money into their accounts without placing ads then. Like maintain an online account with us.
+5. Turn to radio and tv ads agency. Registered users can place ads on an array of partnering stations
+6. Advanced ad date(s) picker, ability to select custom dates and diff time belts per day. 
