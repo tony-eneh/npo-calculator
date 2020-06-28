@@ -30,3 +30,27 @@ Features:
 4. People can put money into their accounts without placing ads then. Like maintain an online account with us.
 5. Turn to radio and tv ads agency. Registered users can place ads on an array of partnering stations
 6. Advanced ad date(s) picker, ability to select custom dates and diff time belts per day. 
+
+#Schema
+
+##Ad
+- ad title
+- ad id
+- created_by: user id
+- ad_type: an enum. one of announcement, hype, jingle, news coverage etc
+- campaign id (campaign is the topmost level of ads. A campaign can contain one or more ads.
+whereby each ad is a method specific commercial broadcast. Eg a jingle, announcement, hype etc)
+- total amount
+- slots: Slots[]
+ whereby Slot is an object thus:
+ { 
+     datetime: Date
+ }
+- discounts:{
+    
+}
+- surcharges: {
+    religious_program: Boolean, 
+political_program: Boolean, 
+...
+}

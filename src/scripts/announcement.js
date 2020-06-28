@@ -17,6 +17,10 @@ const programmeDisplacement = document.querySelector('#programme-displacement');
 const programmeAdjacency = document.querySelector('#programme-adjacency');
 const independentProgramme = document.querySelector('#independent-programme');
 
+// bookAd button
+const bookAd = document.querySelector('#bookAd');
+const saveAd = document.querySelector('#saveAd');
+
 
 
 const calcTotal = () => {
@@ -115,3 +119,18 @@ programmeAdjacency.addEventListener('input', calcTotal);
 independentProgramme.addEventListener('input', calcTotal);
 
 calcTotal();
+
+// save ad for later
+const saveForLater = (e) => {
+    // check if user is loggedin
+    // prepare form data in api acceptable format
+    // if yes, use loggedin credentials and formatted form data to send a post request to save a new ad for later
+    // if post request returns ok display success alert and redirect to myAds page
+}
+
+const bookAd = (e) => {
+    // check if user is loggedin
+    // prepare form data in api acceptable format
+    // if yes, use loggedin credentials and formatted form data to send a post request to paystack api page
+    // TODO: implement paystack payment page with node
+}

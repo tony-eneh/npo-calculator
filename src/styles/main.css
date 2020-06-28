@@ -267,7 +267,7 @@ form #display-amount {
     font-size: 1.4rem;
 }
 
-.button>a {
-    color: var(--background-color);
+.button {
+    color: red;
     text-decoration: none;
 }
